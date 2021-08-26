@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.191.1/containers/codespaces-linux
 {
-	"name": "GitHub Codespaces (Default)",
+	"name": "Flutter Dev environment (built on default Codespaces image)",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -40,7 +40,9 @@
 	
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"GitHub.vscode-pull-request-github"
+		"GitHub.vscode-pull-request-github",
+		"dart-code.flutter",
+		"dart-code.dart-code"
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
