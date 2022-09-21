@@ -22,7 +22,7 @@ ENV ANDROID_SDK_ROOT /home/vscode/opt/android-sdk
 ENV PATH $PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 ENV PATH $PATH:$ANDROID_SDK_ROOT/platform-tools
 
-RUN sdkmanager --sdk_root=${ANDROID_SDK_ROOT} "platform-tools" "platforms;android-30" "build-tools;30.0.3" && \
+RUN sdkmanager --sdk_root=${ANDROID_SDK_ROOT} "platform-tools" "platforms;android-32" "build-tools;32.0.0" && \
     flutter config --android-sdk $ANDROID_SDK_ROOT && \
     flutter precache 
 
